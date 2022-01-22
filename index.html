@@ -8,13 +8,35 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 		</head>
 		<body>
-			<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-				<div class="container-fluid">
-					<a class="navbar-branch" href="#">
-						<img src="./inmage/logo.png" height="100%">
+			<div class="main-navbar_container container px-md-0">
+				<div class="main-navbar_left">
+					<a class="navbar-branch d-block mr-lg-5" href="/">
+						<img src="./inmage/logo.png" alt="Viblo" width="62" height="21">
 					</a>
-						<button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive"></button>
+						<ul class="main-menu list-unstyled hidden-md-down">
+								<li class="main-menu_item">
+									<a class="link" href="/">Bài Viết</a>
+								</li>
+								<li class="main-menu_item">
+									<a class="link" href="/questions">Hỏi Đáp</a>
+								</li>
+								<li class="main-menu_item">
+									<a class="link" href="/discusstion">Thảo Luận</a>
+								</li>
+							</ul>
 				</div>
-			</nav>
+				<div class="main-navbar_right">
+					<a href="/Search" class="link text-muted hidden-md-up mr-1">
+						<i aria-hidden="true" class="fa fa-search"></i>
+					</a>
+					<div class="sb hidden-sm-down flex-fill mr-1">
+						<input placeholder="Tìm kiếm trên Viblo" value class="sb_input">
+						<button class="btn btn-primary" style="display: ;">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+					<a class="nav-link" href="#">Đăng Nhập/Đăng Ký</a>
+				</div>
+			</div>
 		</body>
 </html>
